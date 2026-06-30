@@ -1,10 +1,9 @@
 export default function Projects() {
-  const headRef = useReveal();
 
   return (
-    <section id="projects" className="section projects">
+    <section className="section projects">
       <div className="section-inner">
-        <div ref={headRef} className="reveal projects__head">
+        <div ref={headRef} className="projects__head">
           <span className="over-heading">Selected work</span>
           <h2 className="section-heading">Projects</h2>
           <p className="section-sub">
@@ -12,7 +11,7 @@ export default function Projects() {
             and code structure.
           </p>
         </div>
-        
+
       </div>
     </section>
   );
