@@ -3,7 +3,7 @@ export default function Skills() {
   return (
     <section className="section skills">
       <div className="section-inner">
-        <div ref={headRef} className="projects__head">
+        <div className="projects__head">
           <span className="over-heading">Toolbox</span>
           <h2 className="section-heading">Skills</h2>
           <p className="section-sub">

@@ -3,7 +3,7 @@ export default function Projects() {
   return (
     <section className="section projects">
       <div className="section-inner">
-        <div ref={headRef} className="projects__head">
+        <div className="projects__head">
           <span className="over-heading">Selected work</span>
           <h2 className="section-heading">Projects</h2>
           <p className="section-sub">

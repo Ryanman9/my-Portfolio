@@ -2,7 +2,7 @@ export default function About() {
     return(
         <section className="section about">
             <div className="section-inner">
-                <div ref={imageRef} className="about__image reveal">
+                <div className="about__image reveal">
                     <img
                     />
                     <span className="about__image-tag">Hello, I'm Asfar</span>
