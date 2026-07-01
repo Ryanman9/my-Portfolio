@@ -1,6 +1,6 @@
 export default function About() {
     return(
-        <section className="section about">
+        <section id="about" className="section about">
             <div className="section-inner">
                 <div className="about__image reveal">
                     <img

@@ -1,7 +1,7 @@
 export default function Projects() {
 
   return (
-    <section className="section projects">
+    <section id="projects" className="section projects">
       <div className="section-inner">
         <div className="projects__head">
           <span className="over-heading">Selected work</span>

@@ -1,6 +1,6 @@
 export default function Hero() {
     return (
-        <section className="hero">
+        <section id="home" className="hero">
             <div className="hero_firstLine">
                 <span className="hero__meta-left">Web&nbsp;Developer</span>
                 <span className="hero_meta-right">Open to Opportunities</span>
