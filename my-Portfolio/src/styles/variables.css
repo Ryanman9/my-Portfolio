@@ -1,0 +1,38 @@
+:root {
+    /* Color */
+    --bg: #f7f5f0;
+    --bg-alt: #E1DDD4;
+    --surface: #FAF8F4;
+    --ink: #15130F;
+    --ink-soft: #4A4640;
+    --muted: #8C8678;
+    --line: rgba(21, 19, 15, 0.12);
+    --line-strong: rgba(21, 19, 15, 0.22);
+    --red: #ff260a;
+    --red-soft: rgba(255, 59, 34, 0.12);
+
+    /* Type */
+    --font-cover: "MonumentExtended-Ultrabold";
+    --font-display: "Anton", "Arial Narrow", sans-serif;
+    --font-script: 'Brittany Signature', cursive;
+    --font-body: "Inter", sans-serif;
+
+    /* Scale */
+    --fs-hero: clamp(3.6rem, 10vw, 8rem);
+    --fs-h1: clamp(2.4rem, 5vw, 4rem);
+    --fs-h2: clamp(1.8rem, 3.2vw, 2.6rem);
+    --fs-body: 1rem;
+    --fs-small: 0.85rem;
+
+    /* Layout */
+    --max-width: 1280px;
+    --gutter: clamp(1.5rem, 5vw, 4rem);
+    --radius-sm: 4px;
+    --radius-md: 10px;
+
+    /* Motion */
+    --ease: cubic-bezier(0.22, 1, 0.36, 1);
+    --dur-fast: 220ms;
+    --dur-mid: 420ms;
+    --dur-slow: 700ms;
+}
