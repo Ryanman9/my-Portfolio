@@ -71,6 +71,8 @@
   }
 
   .about_image img {
-    aspect-ratio: 16 / 10;
+    aspect-ratio: auto;
+    object-fit: contain;
+    height: auto;
   }
 }

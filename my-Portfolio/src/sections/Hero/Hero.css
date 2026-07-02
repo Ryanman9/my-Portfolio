@@ -101,9 +101,11 @@
 @media (max-width: 720px) {
     .hero_firstLine {
         font-size: 0.75rem;
-        flex-direction: column;
-        gap: 0.5rem;
-        text-align: center;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
     }
 
     .hero_info {
