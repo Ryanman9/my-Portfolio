@@ -1,0 +1,176 @@
+.contact_intro {
+  display: grid;
+  grid-template-columns: 1fr 520px;
+  align-items: center;
+  gap: 5rem;
+}
+
+.contact_content {
+    transform: translateY(-30px);
+}
+
+.contact .section-sub {
+  margin-bottom: 0;
+}
+
+
+.contact_card {
+  width: 100%;
+  max-width: 600px;
+  padding: 2rem;
+
+  border-radius: 22px;
+  border: 1px solid var(--line-strong);
+
+  background: rgba(255, 255, 255, 0.02);
+  backdrop-filter: blur(8px);
+
+  text-align: left;
+}
+
+.contact_card::before {
+  content: "Find me online";
+  display: block;
+
+  width: fit-content;
+  padding-bottom: 6px;
+  margin-bottom: 1.2rem;
+
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--ink);
+
+  border-bottom: 2px solid var(--red);
+}
+
+.contact_socials {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.contact_social-link {
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+
+  padding: 0.75rem 1rem;
+  border-radius: 14px;
+
+  font-size: 0.92rem;
+  font-weight: 600;
+
+  color: var(--ink-soft);
+
+  border: 1px solid transparent;
+  background: rgba(255, 255, 255, 0.02);
+
+  transition: all 0.3s ease;
+}
+
+.contact_icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+
+  background: rgba(255, 255, 255, 0.03);
+
+  transition: all 0.3s ease;
+}
+
+.contact_icon svg {
+  width: 16px;
+  height: 16px;
+  transition: transform 0.3s ease;
+}
+
+.contact_arrow {
+  margin-left: auto;
+  font-size: 1rem;
+  transition: transform 0.3s ease;
+}
+
+.contact_social-link:hover {
+  color: var(--ink);
+  border-color: rgba(255, 59, 34, 0.25);
+  background: rgba(255, 59, 34, 0.05);
+  transform: translateX(5px);
+}
+
+.contact_social-link:hover .contact_icon {
+  background: rgba(255, 59, 34, 0.08);
+}
+
+.contact_social-link:hover svg {
+  transform: rotate(-8deg) scale(1.1);
+}
+
+.contact_social-link:hover .contact_arrow {
+  transform: translateX(3px);
+}
+
+.contact_mail {
+  margin-top: 1.2rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--line-strong);
+
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.contact_mail span {
+  font-size: 0.8rem;
+  color: var(--ink-soft);
+}
+
+.contact_mail a {
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: var(--ink);
+
+  transition: color 0.3s ease;
+}
+
+.contact_mail a:hover {
+  color: var(--red);
+}
+
+@media (max-width: 900px) {
+  .contact_intro {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .contact_card {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 720px) {
+  .contact_card {
+    padding: 1.2rem;
+  }
+
+  .contact_social-link {
+    padding: 0.8rem;
+    font-size: 0.88rem;
+  }
+
+  .contact_icon {
+    width: 32px;
+    height: 32px;
+  }
+
+  .contact_mail a {
+    font-size: 0.95rem;
+  }
+}

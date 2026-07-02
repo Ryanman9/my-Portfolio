@@ -2,7 +2,7 @@ import useReveal from "../../hooks/useReveal";
 import "./About.css";
 
 const STATS = [
-  { label: "Projects Completed", value: "3+" },
+  { label: "Projects Completed", value: "5+" },
   { label: "Location", value: "Uttar Pradesh, IN" },
 ];
 
