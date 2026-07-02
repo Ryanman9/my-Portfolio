@@ -48,7 +48,7 @@ export default function Contact() {
                                 >
                                     <div className="contact_icon">
                                         <svg width="20" height="20" aria-hidden="true">
-                                            <use href={`/icons.svg#${social.id}`} />
+                                            <use href={`${import.meta.env.BASE_URL}icons.svg#${social.id}`} />
                                         </svg>
                                     </div>
 
