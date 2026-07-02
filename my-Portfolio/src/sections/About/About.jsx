@@ -1,5 +1,4 @@
 import useReveal from "../../hooks/useReveal";
-import Profile from "../../../public/images/Profile.png";
 import "./About.css";
 
 const STATS = [
@@ -43,7 +42,7 @@ export default function About() {
 
 
         <div ref={imageRef} className="about_image reveal">
-            <img src={Profile} alt="Profile" />
+            <img src={`${import.meta.env.BASE_URL}images/Profile.png`} alt="Profile" />
             <span className="about_image-tag">Hello, I'm Asfar</span>
         </div>
 
