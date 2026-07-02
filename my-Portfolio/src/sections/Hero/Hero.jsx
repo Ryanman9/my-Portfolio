@@ -1,6 +1,8 @@
 import "./Hero.css";
 
 export default function Hero() {
+    const scrollTo = (id) => document.getElementById(id)?.scrollIntoView({ behavior: "smooth"});
+
     return (
         <section id="home" className="hero">
             <div className="hero_firstLine">
@@ -20,10 +22,14 @@ export default function Hero() {
             </p>
 
             <div className="hero_info">
-                <button className="btn-primary">
+                <button className="btn btn-primary"
+                    onClick={() =>
+                        window.open("https://drive.google.com/file/d/1woWnIx3ddWcFNStxElPTGoXKu1dBl1AJ/view?usp=drive_link", "_blank")
+                    }
+                >
                     Download CV
                 </button>
-                <button className="btn-secondary">
+                <button className="btn btn-secondary" onClick={() => scrollTo("contact")}>
                     Contact Me
                 </button>
             </div>
