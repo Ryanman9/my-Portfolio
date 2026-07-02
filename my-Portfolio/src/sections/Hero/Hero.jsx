@@ -1,9 +1,11 @@
+import "./Hero.css";
+
 export default function Hero() {
     return (
         <section id="home" className="hero">
             <div className="hero_firstLine">
-                <span className="hero__meta-left">Web&nbsp;Developer</span>
-                <span className="hero_meta-right">Open to Opportunities</span>
+                <span className="hero_meta-left">Web&nbsp;Developer</span>
+                <span className="hero_meta-right">Open to Opportunities →</span>
             </div>
 
             <div className="hero_center">

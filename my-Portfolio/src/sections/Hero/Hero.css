@@ -1,0 +1,127 @@
+.hero {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3.5rem var(--gutter);
+    overflow: hidden;
+}
+
+@keyframes drift {
+    0%, 100% { transform: translate(0, 0) scale(1); }
+    50% { transform: translate(-20px, 24px) scale(1.06); }
+}
+
+.hero_firstLine {
+    margin: 1rem;
+    width: 100%;
+    max-width: var(--max-width);
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    color: var(--ink-soft);
+    opacity: 0;
+    animation: fadeUp var(--dur-slow) var(--ease) forwards;
+    animation-delay: 0.1s;
+}
+
+.hero_meta-right {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.hero_center {
+    position: relative;
+    width: 100%;
+    max-width: var(--max-width);
+    display: flex;
+    justify-content: center;
+    margin: 2.2rem 0 1.5rem;
+}
+
+.hero_portfolio {
+    position: relative;
+    font-family: var(--font-cover);
+    font-size: var(--fs-hero);
+    line-height: 0.86;
+    text-align: center;
+    letter-spacing: -0.01em;
+    color: var(--ink);
+}
+
+.hero_portfolio-line {
+    display: block;
+    opacity: 0;
+    animation: fadeUp var(--dur-slow) var(--ease) forwards;
+}
+
+.hero_name {
+    display: block;
+    font-family: var(--font-script);
+    font-weight: 500;
+    font-size: clamp(1.9rem, 6vw, 7rem);
+    color: var(--red);
+    transform: rotate(-4deg);
+    margin: -0.6em 0;
+    opacity: 0;
+    animation: fadeUp var(--dur-slow) var(--ease) forwards;
+    animation-delay: 0.32s;
+}
+
+.hero_tagline {
+    max-width: 42ch;
+    text-align: center;
+    color: var(--ink-soft);
+    font-size: 1.05rem;
+    margin-top: 4rem;
+    opacity: 0;
+    animation: fadeUp var(--dur-slow) var(--ease) forwards;
+    animation-delay: 0.55s;
+}
+
+.hero_info {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2.2rem;
+    opacity: 0;
+    animation: fadeUp var(--dur-slow) var(--ease) forwards;
+    animation-delay: 0.68s;
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(22px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 720px) {
+    .hero_firstLine {
+        font-size: 0.75rem;
+        flex-direction: column;
+        gap: 0.5rem;
+        text-align: center;
+    }
+
+    .hero_info {
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+
+    .btn-primary,
+    .btn-secondary {
+        width: 200px;
+        height: 42px;
+        font-size: 0.9rem;
+    }
+
+    .hero_tagline {
+        font-size: 0.95rem;
+        margin-top: 2rem;
+        padding: 0 1rem;
+    }
+}
