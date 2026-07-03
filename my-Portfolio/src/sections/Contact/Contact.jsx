@@ -63,7 +63,7 @@ export default function Contact() {
                 <div className="contact_mail">
                         <span>or email me directly</span>
 
-                        <a href="mailto:asferk8@email.com">asferk8@gmail.com</a>
+                        <a href="mailto:asferk8@gmail.com">asferk8@gmail.com</a>
                 </div>
             </div>
         </div>
